@@ -47,5 +47,14 @@ namespace Entity_Satis_Projesi
             db.SaveChanges();
             MessageBox.Show("Kategori Silindi");
         }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            int x = Convert.ToInt32(txtKategoriId.Text);
+            var ktgr = db.TBLKATEGORI.Find(x);
+            ktgr.AD = txtKategoriAd.Text; //ktgr den bulmus oldugumuz ad değişkenine değeri ata
+            db.SaveChanges();
+            MessageBox.Show("Kategori Güncellendi");
+        }
     }
 }

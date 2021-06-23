@@ -79,7 +79,7 @@ namespace Entity_Satis_Projesi
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(257, 6);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(480, 190);
+            this.dataGridView1.Size = new System.Drawing.Size(480, 159);
             this.dataGridView1.TabIndex = 4;
             // 
             // btnListele
@@ -120,6 +120,7 @@ namespace Entity_Satis_Projesi
             this.btnGuncelle.TabIndex = 8;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // Form1
             // 
