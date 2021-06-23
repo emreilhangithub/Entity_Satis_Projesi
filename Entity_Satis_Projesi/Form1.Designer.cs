@@ -31,8 +31,8 @@ namespace Entity_Satis_Projesi
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtKategoriId = new System.Windows.Forms.TextBox();
+            this.txtKategoriAd = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnListele = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
@@ -59,22 +59,23 @@ namespace Entity_Satis_Projesi
             this.label2.TabIndex = 1;
             this.label2.Text = "Kategori AD:";
             // 
-            // textBox1
+            // txtKategoriId
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 27);
-            this.textBox1.TabIndex = 2;
+            this.txtKategoriId.Location = new System.Drawing.Point(116, 6);
+            this.txtKategoriId.Name = "txtKategoriId";
+            this.txtKategoriId.Size = new System.Drawing.Size(100, 27);
+            this.txtKategoriId.TabIndex = 2;
             // 
-            // textBox2
+            // txtKategoriAd
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 27);
-            this.textBox2.TabIndex = 3;
+            this.txtKategoriAd.Location = new System.Drawing.Point(116, 42);
+            this.txtKategoriAd.Name = "txtKategoriAd";
+            this.txtKategoriAd.Size = new System.Drawing.Size(100, 27);
+            this.txtKategoriAd.TabIndex = 3;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(257, 6);
             this.dataGridView1.Name = "dataGridView1";
@@ -108,6 +109,7 @@ namespace Entity_Satis_Projesi
             this.btnEkle.TabIndex = 7;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnGuncelle
             // 
@@ -128,8 +130,8 @@ namespace Entity_Satis_Projesi
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnListele);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtKategoriAd);
+            this.Controls.Add(this.txtKategoriId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -146,8 +148,8 @@ namespace Entity_Satis_Projesi
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtKategoriId;
+        private System.Windows.Forms.TextBox txtKategoriAd;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnListele;
         private System.Windows.Forms.Button btnSil;
