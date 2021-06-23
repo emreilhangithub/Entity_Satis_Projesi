@@ -16,5 +16,7 @@ namespace Entity_Satis_Projesi
         {
             InitializeComponent();
         }
+
+        
     }
 }
