@@ -216,6 +216,7 @@ namespace Entity_Satis_Projesi
             this.btnSil.TabIndex = 17;
             this.btnSil.Text = "SİL";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnGuncelle
             // 
@@ -225,6 +226,7 @@ namespace Entity_Satis_Projesi
             this.btnGuncelle.TabIndex = 18;
             this.btnGuncelle.Text = "GÜNCELLE";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // btnTemizle
             // 

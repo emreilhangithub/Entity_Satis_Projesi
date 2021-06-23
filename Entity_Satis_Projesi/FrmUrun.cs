@@ -44,5 +44,26 @@ namespace Entity_Satis_Projesi
             MessageBox.Show("Ürün sisteme kayıt edildi");
 
         }
+
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            int x = Convert.ToInt32(txtId.Text);
+            var urun = db.TBLURUN.Find(x);
+            db.TBLURUN.Remove(urun);
+            db.SaveChanges();
+            MessageBox.Show("Ürün sistemden silindi");
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            int x = Convert.ToInt32(txtId.Text);
+            var urun = db.TBLURUN.Find(x);
+            urun.URUNAD = txtUrunAd.Text;
+            urun.STOK = short.Parse(txtUrunStok.Text);
+            urun.MARKA = txtUrunMarka.Text;
+            db.SaveChanges();
+            MessageBox.Show("Ürün sistemden güncellendi");
+
+        }
     }
 }
