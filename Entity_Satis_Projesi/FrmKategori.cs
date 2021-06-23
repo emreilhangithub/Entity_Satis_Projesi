@@ -56,5 +56,10 @@ namespace Entity_Satis_Projesi
             db.SaveChanges();
             MessageBox.Show("Kategori Güncellendi");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
