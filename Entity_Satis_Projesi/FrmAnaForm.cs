@@ -31,5 +31,12 @@ namespace Entity_Satis_Projesi
             fr.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Frmistatistik fr = new Frmistatistik();
+            fr.Show();
+            this.Hide();
+        }
     }
 }
