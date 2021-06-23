@@ -17,6 +17,14 @@ namespace Entity_Satis_Projesi
             InitializeComponent();
         }
 
-        
+        DbEntityUrunEntities db = new DbEntityUrunEntities();
+
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            var kategoriler = db.TBLKATEGORI.ToList();
+            //kategori adında bir değişken oluşturduk ve bu değişkende kategorileri listeledik
+            dataGridView1.DataSource = kategoriler;
+          
+        }
     }
 }

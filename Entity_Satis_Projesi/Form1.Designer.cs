@@ -89,6 +89,7 @@ namespace Entity_Satis_Projesi
             this.btnListele.TabIndex = 5;
             this.btnListele.Text = "Listele";
             this.btnListele.UseVisualStyleBackColor = true;
+            this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
             // btnSil
             // 
