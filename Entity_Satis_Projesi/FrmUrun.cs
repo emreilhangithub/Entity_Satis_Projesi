@@ -35,7 +35,7 @@ namespace Entity_Satis_Projesi
             t.URUNAD = txtUrunAd.Text;
             t.MARKA = txtUrunMarka.Text;
             t.STOK = short.Parse(txtUrunStok.Text);
-            t.KATEGORI = int.Parse(cmbKategori.Text);
+            t.KATEGORI = int.Parse(cmbKategori.SelectedValue.ToString());
             t.FIYAT = decimal.Parse(txtUrunFiyat.Text);
             t.DURUM = true;
 
@@ -64,6 +64,24 @@ namespace Entity_Satis_Projesi
             db.SaveChanges();
             MessageBox.Show("Ürün sistemden güncellendi");
 
+        }
+
+        private void FrmUrun_Load(object sender, EventArgs e)
+        {
+            var kategoriler = (from x in db.TBLKATEGORI
+                               select new { x.ID, x.AD }).ToList();
+            //x isminde bir değişken olustur bu değerleri tblkategori tablosundan al
+            //select new alacagın alanlar {} içine yazılır
+            //tolist bunları bana listele
+            cmbKategori.ValueMember="ID";
+            cmbKategori.DisplayMember = "AD";
+            cmbKategori.DataSource = kategoriler;
+            //datasource veri kaynağı 
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtUrunAd.Text = cmbKategori.SelectedValue.ToString();
         }
     }
 }

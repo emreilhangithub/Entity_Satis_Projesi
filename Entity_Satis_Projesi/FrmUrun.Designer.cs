@@ -126,7 +126,7 @@ namespace Entity_Satis_Projesi
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(11, 207);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(427, 196);
             this.dataGridView1.TabIndex = 7;
@@ -134,7 +134,7 @@ namespace Entity_Satis_Projesi
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(91, 4);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(160, 23);
             this.txtId.TabIndex = 8;
@@ -142,7 +142,7 @@ namespace Entity_Satis_Projesi
             // txtUrunAd
             // 
             this.txtUrunAd.Location = new System.Drawing.Point(91, 31);
-            this.txtUrunAd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUrunAd.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunAd.Name = "txtUrunAd";
             this.txtUrunAd.Size = new System.Drawing.Size(160, 23);
             this.txtUrunAd.TabIndex = 9;
@@ -151,7 +151,7 @@ namespace Entity_Satis_Projesi
             // txtUrunStok
             // 
             this.txtUrunStok.Location = new System.Drawing.Point(91, 57);
-            this.txtUrunStok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUrunStok.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunStok.Name = "txtUrunStok";
             this.txtUrunStok.Size = new System.Drawing.Size(160, 23);
             this.txtUrunStok.TabIndex = 10;
@@ -159,7 +159,7 @@ namespace Entity_Satis_Projesi
             // txtUrunMarka
             // 
             this.txtUrunMarka.Location = new System.Drawing.Point(91, 84);
-            this.txtUrunMarka.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUrunMarka.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunMarka.Name = "txtUrunMarka";
             this.txtUrunMarka.Size = new System.Drawing.Size(160, 23);
             this.txtUrunMarka.TabIndex = 11;
@@ -167,7 +167,7 @@ namespace Entity_Satis_Projesi
             // txtUrunFiyat
             // 
             this.txtUrunFiyat.Location = new System.Drawing.Point(91, 111);
-            this.txtUrunFiyat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUrunFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunFiyat.Name = "txtUrunFiyat";
             this.txtUrunFiyat.Size = new System.Drawing.Size(160, 23);
             this.txtUrunFiyat.TabIndex = 12;
@@ -175,7 +175,7 @@ namespace Entity_Satis_Projesi
             // txtUrunDurum
             // 
             this.txtUrunDurum.Location = new System.Drawing.Point(91, 138);
-            this.txtUrunDurum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUrunDurum.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunDurum.Name = "txtUrunDurum";
             this.txtUrunDurum.Size = new System.Drawing.Size(160, 23);
             this.txtUrunDurum.TabIndex = 13;
@@ -236,6 +236,7 @@ namespace Entity_Satis_Projesi
             this.btnTemizle.TabIndex = 19;
             this.btnTemizle.Text = "TEMİZLE";
             this.btnTemizle.UseVisualStyleBackColor = true;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // FrmUrun
             // 
@@ -266,6 +267,7 @@ namespace Entity_Satis_Projesi
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmUrun";
             this.Text = "Ürünler";
+            this.Load += new System.EventHandler(this.FrmUrun_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
