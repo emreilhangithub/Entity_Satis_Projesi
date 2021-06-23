@@ -55,7 +55,7 @@ namespace Entity_Satis_Projesi
             this.lblSehirSayisi = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lblToplamBuzbolabiSayisi = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.lblEnFazlaUrunluMarka = new System.Windows.Forms.Label();
@@ -331,7 +331,7 @@ namespace Entity_Satis_Projesi
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(52)))), ((int)(((byte)(113)))));
             this.panel9.Controls.Add(this.label17);
-            this.panel9.Controls.Add(this.label18);
+            this.panel9.Controls.Add(this.lblToplamBuzbolabiSayisi);
             this.panel9.Location = new System.Drawing.Point(669, 246);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
@@ -344,19 +344,19 @@ namespace Entity_Satis_Projesi
             this.label17.Location = new System.Drawing.Point(4, 13);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(184, 21);
+            this.label17.Size = new System.Drawing.Size(196, 21);
             this.label17.TabIndex = 1;
-            this.label17.Text = "Toplam Kategori Sayısı";
+            this.label17.Text = "Toplam Buzdolabı Sayısı";
             // 
-            // label18
+            // lblToplamBuzbolabiSayisi
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(17, 72);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(19, 21);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "0";
+            this.lblToplamBuzbolabiSayisi.AutoSize = true;
+            this.lblToplamBuzbolabiSayisi.Location = new System.Drawing.Point(17, 72);
+            this.lblToplamBuzbolabiSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblToplamBuzbolabiSayisi.Name = "lblToplamBuzbolabiSayisi";
+            this.lblToplamBuzbolabiSayisi.Size = new System.Drawing.Size(19, 21);
+            this.lblToplamBuzbolabiSayisi.TabIndex = 0;
+            this.lblToplamBuzbolabiSayisi.Text = "0";
             // 
             // panel10
             // 
@@ -528,7 +528,7 @@ namespace Entity_Satis_Projesi
         private System.Windows.Forms.Label lblSehirSayisi;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblToplamBuzbolabiSayisi;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label lblEnFazlaUrunluMarka;
