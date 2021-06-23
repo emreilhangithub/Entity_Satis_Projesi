@@ -26,7 +26,20 @@ namespace Entity_Satis_Projesi
 
         private void btnListele_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = db.TBLURUN.ToList();
+            //dataGridView1.DataSource = db.TBLURUN.ToList();
+            //TABLONUN İSTENİLEN KOLONLARINI GÖSTERME
+            dataGridView1.DataSource = (from x in db.TBLURUN
+                                        select new
+                                        {
+                                            x.URUNID,
+                                            x.URUNAD,
+                                            x.MARKA,
+                                            x.STOK,
+                                            x.FIYAT,
+                                            x.TBLKATEGORI.AD,//BURADA JOİNLİ TABLODAN ADI CEKTİK
+                                            x.DURUM
+                                        }
+                                        ).ToList();
         }
 
         private void btnEkle_Click(object sender, EventArgs e)
