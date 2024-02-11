@@ -29,6 +29,7 @@ namespace Entity_Satis_Projesi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUrun));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,7 +59,7 @@ namespace Entity_Satis_Projesi
             this.label1.Location = new System.Drawing.Point(66, 4);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 15);
+            this.label1.Size = new System.Drawing.Size(36, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
             // 
@@ -68,7 +69,7 @@ namespace Entity_Satis_Projesi
             this.label2.Location = new System.Drawing.Point(20, 31);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 15);
+            this.label2.Size = new System.Drawing.Size(108, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "URUN ADI:";
             // 
@@ -78,7 +79,7 @@ namespace Entity_Satis_Projesi
             this.label3.Location = new System.Drawing.Point(34, 84);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 15);
+            this.label3.Size = new System.Drawing.Size(85, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "MARKA:";
             // 
@@ -88,7 +89,7 @@ namespace Entity_Satis_Projesi
             this.label4.Location = new System.Drawing.Point(46, 57);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 15);
+            this.label4.Size = new System.Drawing.Size(67, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "STOK:";
             // 
@@ -98,7 +99,7 @@ namespace Entity_Satis_Projesi
             this.label5.Location = new System.Drawing.Point(44, 111);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 15);
+            this.label5.Size = new System.Drawing.Size(66, 24);
             this.label5.TabIndex = 4;
             this.label5.Text = "FİYAT:";
             // 
@@ -108,7 +109,7 @@ namespace Entity_Satis_Projesi
             this.label6.Location = new System.Drawing.Point(30, 138);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 15);
+            this.label6.Size = new System.Drawing.Size(88, 24);
             this.label6.TabIndex = 5;
             this.label6.Text = "DURUM:";
             // 
@@ -118,7 +119,7 @@ namespace Entity_Satis_Projesi
             this.label7.Location = new System.Drawing.Point(15, 166);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 15);
+            this.label7.Size = new System.Drawing.Size(110, 24);
             this.label7.TabIndex = 6;
             this.label7.Text = "KATEGORİ:";
             // 
@@ -128,6 +129,7 @@ namespace Entity_Satis_Projesi
             this.dataGridView1.Location = new System.Drawing.Point(11, 207);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(427, 196);
             this.dataGridView1.TabIndex = 7;
             // 
@@ -136,7 +138,7 @@ namespace Entity_Satis_Projesi
             this.txtId.Location = new System.Drawing.Point(91, 4);
             this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(160, 23);
+            this.txtId.Size = new System.Drawing.Size(160, 31);
             this.txtId.TabIndex = 8;
             // 
             // txtUrunAd
@@ -144,7 +146,7 @@ namespace Entity_Satis_Projesi
             this.txtUrunAd.Location = new System.Drawing.Point(91, 31);
             this.txtUrunAd.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunAd.Name = "txtUrunAd";
-            this.txtUrunAd.Size = new System.Drawing.Size(160, 23);
+            this.txtUrunAd.Size = new System.Drawing.Size(160, 31);
             this.txtUrunAd.TabIndex = 9;
             this.txtUrunAd.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -153,7 +155,7 @@ namespace Entity_Satis_Projesi
             this.txtUrunStok.Location = new System.Drawing.Point(91, 57);
             this.txtUrunStok.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunStok.Name = "txtUrunStok";
-            this.txtUrunStok.Size = new System.Drawing.Size(160, 23);
+            this.txtUrunStok.Size = new System.Drawing.Size(160, 31);
             this.txtUrunStok.TabIndex = 10;
             // 
             // txtUrunMarka
@@ -161,7 +163,7 @@ namespace Entity_Satis_Projesi
             this.txtUrunMarka.Location = new System.Drawing.Point(91, 84);
             this.txtUrunMarka.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunMarka.Name = "txtUrunMarka";
-            this.txtUrunMarka.Size = new System.Drawing.Size(160, 23);
+            this.txtUrunMarka.Size = new System.Drawing.Size(160, 31);
             this.txtUrunMarka.TabIndex = 11;
             // 
             // txtUrunFiyat
@@ -169,7 +171,7 @@ namespace Entity_Satis_Projesi
             this.txtUrunFiyat.Location = new System.Drawing.Point(91, 111);
             this.txtUrunFiyat.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunFiyat.Name = "txtUrunFiyat";
-            this.txtUrunFiyat.Size = new System.Drawing.Size(160, 23);
+            this.txtUrunFiyat.Size = new System.Drawing.Size(160, 31);
             this.txtUrunFiyat.TabIndex = 12;
             // 
             // txtUrunDurum
@@ -177,7 +179,7 @@ namespace Entity_Satis_Projesi
             this.txtUrunDurum.Location = new System.Drawing.Point(91, 138);
             this.txtUrunDurum.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrunDurum.Name = "txtUrunDurum";
-            this.txtUrunDurum.Size = new System.Drawing.Size(160, 23);
+            this.txtUrunDurum.Size = new System.Drawing.Size(160, 31);
             this.txtUrunDurum.TabIndex = 13;
             // 
             // cmbKategori
@@ -185,7 +187,7 @@ namespace Entity_Satis_Projesi
             this.cmbKategori.FormattingEnabled = true;
             this.cmbKategori.Location = new System.Drawing.Point(91, 166);
             this.cmbKategori.Name = "cmbKategori";
-            this.cmbKategori.Size = new System.Drawing.Size(160, 23);
+            this.cmbKategori.Size = new System.Drawing.Size(160, 32);
             this.cmbKategori.TabIndex = 14;
             // 
             // btnListele
@@ -240,7 +242,7 @@ namespace Entity_Satis_Projesi
             // 
             // FrmUrun
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 414);
             this.Controls.Add(this.btnTemizle);
@@ -264,9 +266,10 @@ namespace Entity_Satis_Projesi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FrmUrun";
-            this.Text = "Ürünler";
+            this.Text = "Ürün Paneli";
             this.Load += new System.EventHandler(this.FrmUrun_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -1,7 +1,7 @@
 ﻿
 namespace Entity_Satis_Projesi
 {
-    partial class Form1
+    partial class FrmKategori
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Entity_Satis_Projesi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKategori));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtKategoriId = new System.Windows.Forms.TextBox();
@@ -46,7 +47,7 @@ namespace Entity_Satis_Projesi
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 19);
+            this.label1.Size = new System.Drawing.Size(137, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Kategori ID:";
             // 
@@ -55,7 +56,7 @@ namespace Entity_Satis_Projesi
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 19);
+            this.label2.Size = new System.Drawing.Size(145, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Kategori AD:";
             // 
@@ -63,14 +64,14 @@ namespace Entity_Satis_Projesi
             // 
             this.txtKategoriId.Location = new System.Drawing.Point(116, 6);
             this.txtKategoriId.Name = "txtKategoriId";
-            this.txtKategoriId.Size = new System.Drawing.Size(100, 27);
+            this.txtKategoriId.Size = new System.Drawing.Size(100, 37);
             this.txtKategoriId.TabIndex = 2;
             // 
             // txtKategoriAd
             // 
             this.txtKategoriAd.Location = new System.Drawing.Point(116, 42);
             this.txtKategoriAd.Name = "txtKategoriAd";
-            this.txtKategoriAd.Size = new System.Drawing.Size(100, 27);
+            this.txtKategoriAd.Size = new System.Drawing.Size(100, 37);
             this.txtKategoriAd.TabIndex = 3;
             // 
             // dataGridView1
@@ -79,6 +80,7 @@ namespace Entity_Satis_Projesi
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(257, 6);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(480, 159);
             this.dataGridView1.TabIndex = 4;
             // 
@@ -124,7 +126,7 @@ namespace Entity_Satis_Projesi
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(749, 208);
             this.Controls.Add(this.btnGuncelle);
@@ -137,9 +139,10 @@ namespace Entity_Satis_Projesi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Kategori Paneli";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

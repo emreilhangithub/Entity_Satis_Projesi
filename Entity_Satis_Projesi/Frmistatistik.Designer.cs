@@ -29,9 +29,10 @@ namespace Entity_Satis_Projesi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmistatistik));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblBeyazEsyaSayisi = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblBeyazEsyaSayisi = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.lblUrunSayisi = new System.Windows.Forms.Label();
@@ -85,20 +86,10 @@ namespace Entity_Satis_Projesi
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblBeyazEsyaSayisi);
             this.panel1.Location = new System.Drawing.Point(13, 135);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(207, 103);
             this.panel1.TabIndex = 0;
-            // 
-            // lblBeyazEsyaSayisi
-            // 
-            this.lblBeyazEsyaSayisi.AutoSize = true;
-            this.lblBeyazEsyaSayisi.Location = new System.Drawing.Point(17, 72);
-            this.lblBeyazEsyaSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblBeyazEsyaSayisi.Name = "lblBeyazEsyaSayisi";
-            this.lblBeyazEsyaSayisi.Size = new System.Drawing.Size(19, 21);
-            this.lblBeyazEsyaSayisi.TabIndex = 0;
-            this.lblBeyazEsyaSayisi.Text = "0";
             // 
             // label2
             // 
@@ -106,9 +97,19 @@ namespace Entity_Satis_Projesi
             this.label2.Location = new System.Drawing.Point(4, 13);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 21);
+            this.label2.Size = new System.Drawing.Size(208, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Beyaz Eşya Sayısı";
+            // 
+            // lblBeyazEsyaSayisi
+            // 
+            this.lblBeyazEsyaSayisi.AutoSize = true;
+            this.lblBeyazEsyaSayisi.Location = new System.Drawing.Point(17, 72);
+            this.lblBeyazEsyaSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBeyazEsyaSayisi.Name = "lblBeyazEsyaSayisi";
+            this.lblBeyazEsyaSayisi.Size = new System.Drawing.Size(28, 32);
+            this.lblBeyazEsyaSayisi.TabIndex = 0;
+            this.lblBeyazEsyaSayisi.Text = "0";
             // 
             // panel2
             // 
@@ -127,7 +128,7 @@ namespace Entity_Satis_Projesi
             this.label3.Location = new System.Drawing.Point(4, 13);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 21);
+            this.label3.Size = new System.Drawing.Size(233, 32);
             this.label3.TabIndex = 1;
             this.label3.Text = "Toplam Ürün Sayısı";
             // 
@@ -137,7 +138,7 @@ namespace Entity_Satis_Projesi
             this.lblUrunSayisi.Location = new System.Drawing.Point(17, 72);
             this.lblUrunSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUrunSayisi.Name = "lblUrunSayisi";
-            this.lblUrunSayisi.Size = new System.Drawing.Size(19, 21);
+            this.lblUrunSayisi.Size = new System.Drawing.Size(28, 32);
             this.lblUrunSayisi.TabIndex = 0;
             this.lblUrunSayisi.Text = "0";
             // 
@@ -158,7 +159,7 @@ namespace Entity_Satis_Projesi
             this.label5.Location = new System.Drawing.Point(4, 13);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 21);
+            this.label5.Size = new System.Drawing.Size(235, 32);
             this.label5.TabIndex = 1;
             this.label5.Text = "Aktif Müşteri Sayısı";
             // 
@@ -168,7 +169,7 @@ namespace Entity_Satis_Projesi
             this.lblAktifMusteriSayisi.Location = new System.Drawing.Point(17, 72);
             this.lblAktifMusteriSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAktifMusteriSayisi.Name = "lblAktifMusteriSayisi";
-            this.lblAktifMusteriSayisi.Size = new System.Drawing.Size(19, 21);
+            this.lblAktifMusteriSayisi.Size = new System.Drawing.Size(28, 32);
             this.lblAktifMusteriSayisi.TabIndex = 0;
             this.lblAktifMusteriSayisi.Text = "0";
             // 
@@ -189,7 +190,7 @@ namespace Entity_Satis_Projesi
             this.label7.Location = new System.Drawing.Point(4, 13);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(157, 21);
+            this.label7.Size = new System.Drawing.Size(234, 32);
             this.label7.TabIndex = 1;
             this.label7.Text = "Pasif Müşteri Sayısı";
             // 
@@ -199,7 +200,7 @@ namespace Entity_Satis_Projesi
             this.lblPasifMusteriSayisi.Location = new System.Drawing.Point(17, 72);
             this.lblPasifMusteriSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPasifMusteriSayisi.Name = "lblPasifMusteriSayisi";
-            this.lblPasifMusteriSayisi.Size = new System.Drawing.Size(19, 21);
+            this.lblPasifMusteriSayisi.Size = new System.Drawing.Size(28, 32);
             this.lblPasifMusteriSayisi.TabIndex = 0;
             this.lblPasifMusteriSayisi.Text = "0";
             // 
@@ -220,7 +221,7 @@ namespace Entity_Satis_Projesi
             this.label9.Location = new System.Drawing.Point(4, 13);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(174, 21);
+            this.label9.Size = new System.Drawing.Size(260, 32);
             this.label9.TabIndex = 1;
             this.label9.Text = "En Düşük Fiyatlı Ürün";
             // 
@@ -230,7 +231,7 @@ namespace Entity_Satis_Projesi
             this.lblEnDusukFiyatliUrunn.Location = new System.Drawing.Point(17, 72);
             this.lblEnDusukFiyatliUrunn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEnDusukFiyatliUrunn.Name = "lblEnDusukFiyatliUrunn";
-            this.lblEnDusukFiyatliUrunn.Size = new System.Drawing.Size(19, 21);
+            this.lblEnDusukFiyatliUrunn.Size = new System.Drawing.Size(28, 32);
             this.lblEnDusukFiyatliUrunn.TabIndex = 0;
             this.lblEnDusukFiyatliUrunn.Text = "0";
             // 
@@ -251,7 +252,7 @@ namespace Entity_Satis_Projesi
             this.label11.Location = new System.Drawing.Point(4, 13);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(179, 21);
+            this.label11.Size = new System.Drawing.Size(266, 32);
             this.label11.TabIndex = 1;
             this.label11.Text = "En Yüksek Fiyatlı Ürün";
             // 
@@ -261,7 +262,7 @@ namespace Entity_Satis_Projesi
             this.lblEnYuksekFiyatliUrunn.Location = new System.Drawing.Point(17, 72);
             this.lblEnYuksekFiyatliUrunn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEnYuksekFiyatliUrunn.Name = "lblEnYuksekFiyatliUrunn";
-            this.lblEnYuksekFiyatliUrunn.Size = new System.Drawing.Size(19, 21);
+            this.lblEnYuksekFiyatliUrunn.Size = new System.Drawing.Size(28, 32);
             this.lblEnYuksekFiyatliUrunn.TabIndex = 0;
             this.lblEnYuksekFiyatliUrunn.Text = "0";
             // 
@@ -282,7 +283,7 @@ namespace Entity_Satis_Projesi
             this.label13.Location = new System.Drawing.Point(4, 13);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(105, 21);
+            this.label13.Size = new System.Drawing.Size(154, 32);
             this.label13.TabIndex = 1;
             this.label13.Text = "Toplam Stok";
             // 
@@ -292,7 +293,7 @@ namespace Entity_Satis_Projesi
             this.lblToplamStok.Location = new System.Drawing.Point(17, 72);
             this.lblToplamStok.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblToplamStok.Name = "lblToplamStok";
-            this.lblToplamStok.Size = new System.Drawing.Size(19, 21);
+            this.lblToplamStok.Size = new System.Drawing.Size(28, 32);
             this.lblToplamStok.TabIndex = 0;
             this.lblToplamStok.Text = "0";
             // 
@@ -313,7 +314,7 @@ namespace Entity_Satis_Projesi
             this.label15.Location = new System.Drawing.Point(4, 13);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(97, 21);
+            this.label15.Size = new System.Drawing.Size(142, 32);
             this.label15.TabIndex = 1;
             this.label15.Text = "Şehir Sayısı";
             // 
@@ -323,7 +324,7 @@ namespace Entity_Satis_Projesi
             this.lblSehirSayisi.Location = new System.Drawing.Point(17, 72);
             this.lblSehirSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSehirSayisi.Name = "lblSehirSayisi";
-            this.lblSehirSayisi.Size = new System.Drawing.Size(19, 21);
+            this.lblSehirSayisi.Size = new System.Drawing.Size(28, 32);
             this.lblSehirSayisi.TabIndex = 0;
             this.lblSehirSayisi.Text = "0";
             // 
@@ -344,7 +345,7 @@ namespace Entity_Satis_Projesi
             this.label17.Location = new System.Drawing.Point(4, 13);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(196, 21);
+            this.label17.Size = new System.Drawing.Size(290, 32);
             this.label17.TabIndex = 1;
             this.label17.Text = "Toplam Buzdolabı Sayısı";
             // 
@@ -354,7 +355,7 @@ namespace Entity_Satis_Projesi
             this.lblToplamBuzbolabiSayisi.Location = new System.Drawing.Point(17, 72);
             this.lblToplamBuzbolabiSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblToplamBuzbolabiSayisi.Name = "lblToplamBuzbolabiSayisi";
-            this.lblToplamBuzbolabiSayisi.Size = new System.Drawing.Size(19, 21);
+            this.lblToplamBuzbolabiSayisi.Size = new System.Drawing.Size(28, 32);
             this.lblToplamBuzbolabiSayisi.TabIndex = 0;
             this.lblToplamBuzbolabiSayisi.Text = "0";
             // 
@@ -375,7 +376,7 @@ namespace Entity_Satis_Projesi
             this.label19.Location = new System.Drawing.Point(4, 13);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(181, 21);
+            this.label19.Size = new System.Drawing.Size(270, 32);
             this.label19.TabIndex = 1;
             this.label19.Text = "En Fazla Ürünlü Marka";
             // 
@@ -385,7 +386,7 @@ namespace Entity_Satis_Projesi
             this.lblEnFazlaUrunluMarka.Location = new System.Drawing.Point(17, 72);
             this.lblEnFazlaUrunluMarka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEnFazlaUrunluMarka.Name = "lblEnFazlaUrunluMarka";
-            this.lblEnFazlaUrunluMarka.Size = new System.Drawing.Size(19, 21);
+            this.lblEnFazlaUrunluMarka.Size = new System.Drawing.Size(28, 32);
             this.lblEnFazlaUrunluMarka.TabIndex = 0;
             this.lblEnFazlaUrunluMarka.Text = "0";
             // 
@@ -406,7 +407,7 @@ namespace Entity_Satis_Projesi
             this.label21.Location = new System.Drawing.Point(4, 13);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(121, 21);
+            this.label21.Size = new System.Drawing.Size(181, 32);
             this.label21.TabIndex = 1;
             this.label21.Text = "Kasadaki Tutar";
             // 
@@ -416,7 +417,7 @@ namespace Entity_Satis_Projesi
             this.lblKasadakiTutar.Location = new System.Drawing.Point(17, 72);
             this.lblKasadakiTutar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKasadakiTutar.Name = "lblKasadakiTutar";
-            this.lblKasadakiTutar.Size = new System.Drawing.Size(19, 21);
+            this.lblKasadakiTutar.Size = new System.Drawing.Size(28, 32);
             this.lblKasadakiTutar.TabIndex = 0;
             this.lblKasadakiTutar.Text = "0";
             // 
@@ -437,7 +438,7 @@ namespace Entity_Satis_Projesi
             this.label23.Location = new System.Drawing.Point(4, 13);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(184, 21);
+            this.label23.Size = new System.Drawing.Size(274, 32);
             this.label23.TabIndex = 1;
             this.label23.Text = "Toplam Kategori Sayısı";
             // 
@@ -447,13 +448,13 @@ namespace Entity_Satis_Projesi
             this.lblToplamKategoriSayisi.Location = new System.Drawing.Point(17, 72);
             this.lblToplamKategoriSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblToplamKategoriSayisi.Name = "lblToplamKategoriSayisi";
-            this.lblToplamKategoriSayisi.Size = new System.Drawing.Size(19, 21);
+            this.lblToplamKategoriSayisi.Size = new System.Drawing.Size(28, 32);
             this.lblToplamKategoriSayisi.TabIndex = 0;
             this.lblToplamKategoriSayisi.Text = "0";
             // 
             // Frmistatistik
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 374);
             this.Controls.Add(this.panel9);
@@ -469,8 +470,10 @@ namespace Entity_Satis_Projesi
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frmistatistik";
+            this.Text = "İstatistik Paneli";
             this.Load += new System.EventHandler(this.Frmistatistik_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

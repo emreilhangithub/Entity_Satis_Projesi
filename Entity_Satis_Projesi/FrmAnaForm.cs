@@ -19,9 +19,8 @@ namespace Entity_Satis_Projesi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 fr = new Form1();
+            FrmKategori fr = new FrmKategori();
             fr.Show();
-            this.Hide();
 
         }
 
@@ -29,14 +28,17 @@ namespace Entity_Satis_Projesi
         {
             FrmUrun fr = new FrmUrun();
             fr.Show();
-            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Frmistatistik fr = new Frmistatistik();
             fr.Show();
-            this.Hide();
+        }
+
+        private void FrmAnaForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
