@@ -2,10 +2,10 @@
 
 ## Proje Tanıtımı 
 
-*Bu projede **.Net** kullanarak satış otomasyonu oluşturdum. CRUD operasyonları için Entity Framework ORM kullanıldım.*
+*Bu projede **.Net** kullanarak satış otomasyonu oluşturdum. CRUD operasyonları için Entity Framework ORM kullandım.*
 
 # Database Yedeği #
-Databse kısmına aşşağıdan ulaşıp kendinize yükleyebilirsiniz. https://github.com/emreilhangithub/Entity_Satis_Projesi/tree/master/database
+Database kısmına [buradan](https://github.com/emreilhangithub/Entity_Satis_Projesi/tree/master/database) ulaşıp kendinize yükleyebilirsiniz.
 
 # Proje İçeriği #
 
